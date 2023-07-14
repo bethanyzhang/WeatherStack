@@ -1,0 +1,873 @@
+body {
+    /* background-color: #1f4e69; */
+    font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: My-Font;
+    src: url(./Linearicons.ttf);
+}
+
+@font-face {
+    font-family: Friendly-Font;
+    src: url(./FriendlyFont.eot) format("embedded-opentype"),
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+nav {
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -585px;
+}
+
+.logo img {
+    width: 202px;
+    height: 28px;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 16px;
+}
+
+.navigator ul {
+    overflow: hidden;
+}
+
+.navigator {
+    float: right;
+}
+
+.navigator li {
+    float: left;
+}
+
+.navigator a {
+    display: inline-block;
+    margin: 16px 15px 19px;
+    font-size: 13px;
+    line-height: 35px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.navigator .status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #47c652;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 12px;
+    margin-left: 4px;
+}
+
+.navigator .status a {
+    margin: 16px 0px 19px 6px;
+    padding: 0px 10px 1px;
+}
+
+.navigator .login a {
+    background: rgba(255, 255, 255, .15);
+    border-radius: 3px;
+    margin-right: 0;
+    padding: 0 10px 1px;
+    font-weight: 700;
+}
+
+.navigator .button a {
+    background-color: #f47b21;
+    padding: 0 10px 1px;
+    margin-right: 0;
+    font-weight: 700;
+}
+
+section.hero {
+    height: 314px;
+    padding: 140px 0px 160px;
+    background-color: #1f4e69;
+    background-image: url(./mountains.svg);
+}
+
+.discription {
+    float: left;
+}
+
+.forecast {
+    float: right;
+    border: 4px solid #608094;
+    background: #16394c;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.forecast-title {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.forecast .middle {
+    overflow: hidden;
+    height: 137px;
+}
+
+.forecast .moon {
+    float: left;
+}
+
+.moon img {
+    width: 140px;
+    height: 120px;
+}
+
+.moon p {
+    text-align: center;
+}
+
+.forecast .index {
+    float: right;
+    padding-top: 45px;
+    margin-right: 50px;
+}
+
+.forecast .index li {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.forecast .index li.index_item {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    font-size: 32px;
+    margin-left: -35px;
+    top: 83px;
+}
+
+.forecast .weekly {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.weekly .day {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.discription h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.discription h4 {
+    font-size: 18px;
+    margin: 10px 0px 17px;
+}
+
+.discription p {
+    font-size: 17px;
+    padding: 6px 10px 13px 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 25px 0px 15px;
+    font-weight: 300;
+    border-radius: 17px;
+}
+
+.discription p::before {
+    content: "\e6e2";
+    font-family: My-Font;
+    font-size: 30px;
+    margin: 5px 5px 3px 5px;
+    vertical-align: middle;
+}
+
+.discription span {
+    font-family: Friendly-Font;
+}
+
+.discription a {
+    display: inline-block;
+    font-size: 14px;
+    background-color: #f47b21;
+    padding: 20px 12px;
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 206px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.discription {
+    display: inline-block;
+}
+
+.navigator li {
+    display: inline-block;
+}
+
+.background {
+    background-image: url("./mountains.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.customers ul {
+    height: 84px;
+}
+
+.customers ul li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    color: black;
+    position: relative;
+}
+
+.customers ul li:first-child {
+    line-height: 50px;
+}
+
+.customers .container {
+    width: 1140px;
+    padding: 0 15px;
+}
+
+.customers {
+    background-color: #eff2f5;
+    padding: 40px 0px 12px;
+}
+
+.Deloitte {
+    background-image: url(./client_deloitte.svg);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Microsoft {
+    background-image: url(./client_microsoft.svg);
+    background-size: 135px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.customers ul li.WarnerBros {
+    width: 110px;
+    background-image: url(./client_warnerbros.svg);
+    background-size: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.customers ul li.Wawa {
+    width: 132px;
+    background-image: url(./client_wawa.svg);
+    background-size: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -5px;
+}
+
+.customers ul li.Schneider {
+    width: 187px;
+    background-image: url(./client_schneider.svg);
+    background-size: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.customers ul li.Ericsson {
+    width: 112px;
+    background-image: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+    width: 112px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.daimler {
+    background-image: url(https://weatherstack.com/site_images/client_white_daimler.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    width: 250px;
+}
+
+.canda {
+    background-image: url(https://weatherstack.com/site_images/client_canda.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    width: 135px;
+}
+
+.mackinsey {
+    background-color: #23477f;
+    background-image: url(https://weatherstack.com/site_images/client_mckinsey.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    width: 260px;
+}
+
+.rimowa {
+    background-image: url(https://weatherstack.com/site_images/client_rimowa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 155px;
+    width: 250px;
+}
+
+.methods {
+    background-color: #16394c;
+    padding: 40px 0 40px 0;
+    position: relative;
+}
+
+.methods .container h4::before {
+    content: 'Example';
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background: #416376;
+    width: 100px;
+    border-radius: 99px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 30px;
+    /* margin-top: -5px; */
+    text-align: center;
+    padding: 10px 0 11px 0;
+}
+
+.methods .container h4 {
+    text-align: center;
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 0;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.methods .container h5 {
+    display: block;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.methods .container ul {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.methods .container ul li {
+    display: inline-block;
+}
+
+.methods .container ul li a {
+    display: inline-block;
+    color: black;
+    margin-left: -3px;
+    margin-right: -2px;
+    width: 225px;
+    padding: 16px 10px 18px 10px;
+    background: #ffffff;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.methods .container ul li a.selected {
+    background: #f47b21;
+    border-color: #f47b21;
+    color: #ffffff;
+}
+
+.methods .container .code {
+    width: 660px;
+    height: 732px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.methods .container .code .prettyprint {
+    display: block;
+    padding-bottom: 10px;
+    max-height: 740px;
+    margin: 0;
+}
+
+.methods .container .code pre {
+    background: #17242b;
+    font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
+    border: 0!important;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.methods .features ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.methods .features {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.methods .container .features ul li {
+    display: inline-block;
+    width: 370px;
+    padding: 14px 20px 15px 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: normal;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    text-align: left;
+}
+
+.methods .features ul li h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.methods .features ul li p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 8px;
+    display: block;
+}
+
+.methods .features .sources h5::before {
+    content: "\e661";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.methods .response h5::before {
+    content: "\e836";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.methods .infrastructure h5::before {
+    content: "\e7fb";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.methods .features .location h5::before {
+    content: "\e923";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.methods .security h5::before {
+    content: "\e668";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.methods .API h5::before {
+    content: "\e782";
+    margin-bottom: 5px;
+    font-family: My-Font;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+section.grid {
+    padding: 45px 0px 50px;
+}
+
+.graphs h5 {
+    font-weight: 500;
+}
+
+.graphs ul li {
+    display: inline-block;
+    height: 100px;
+    margin-right: 10px;
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+
+.graphs .Deloitte {
+    background-size: 150px;
+    width: 250px;
+}
+
+.graphs .Ericsson {
+    background-size: 65px;
+    width: 135px;
+}
+
+.graphs .Microsoft {
+    background-size: 175px;
+    width: 250px;
+}
+
+.graphs .Schneider {
+    background-size: 150px;
+    width: 200px;
+}
+
+.graphs .WarnerBros {
+    background-size: 65px;
+    width: 190px;
+}
+
+.graphs .Wawa {
+    background-size: 110px;
+    width: 250px;
+}
+
+.graphs {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.graphs h4,
+.graphs h5 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.graphs h5 {
+    margin: 20px 270px 0px;
+    font-size: 20px;
+}
+
+.graphs ul {
+    margin-top: 45px;
+}
+
+.footer {
+    background-color: #1f4e69;
+    padding: 50px 0;
+}
+
+.footer .upper .list {
+    display: flex;
+}
+
+.footer .upper .list ul {
+    display: inline-block;
+    color: white;
+    width: 196px;
+    text-align: left;
+}
+
+.footer .upper ul li {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.footer .upper .list .heading {
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer .upper ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .copyright {
+    padding-right: 15px;
+    max-width: 1170px;
+    padding-left: 15px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer .copyright .link {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.footer .copyright .text {
+    font-size: 12px;
+}
+
+.signup {
+    background-color: #eef2f5;
+    padding: 45px 30px 50px 30px;
+    text-align: center;
+}
+
+.signup span {
+    color: black;
+    padding-right: 30px;
+    font-weight: 300;
+}
+
+pre {
+    color: #fff;
+}
+
+.signup span::after {
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 0;
+    content: "\e944";
+    font-family: My-Font;
+    vertical-align: middle;
+}
+
+.signup a {
+    background-color: #f47b21;
+    padding: 17px 15px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.realtime,
+.show .location,
+.speed,
+.upgrade {
+    width: 230px;
+    float: left;
+    margin: 0 12px;
+    background-color: #ebeff4;
+    padding: 10px;
+    height: 190px;
+    color: black;
+}
+
+.show .realtime h5::before {
+    display: block;
+    content: "\e655";
+    font-size: 28px;
+    font-family: My-Font;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.show .location h5::before {
+    content: "\e778";
+    font-size: 28px;
+    font-family: My-Font;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.show .speed h5::before {
+    content: "\e836";
+    font-size: 28px;
+    font-family: My-Font;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.show .upgrade h5::before {
+    content: "\e756";
+    font-size: 28px;
+    font-family: My-Font;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.show {
+    padding: 40px 0;
+}
+
+.show p {
+    color: black;
+}
+
+.show .boxes {
+    background: #eff2f5;
+    border-radius: 5px;
+    padding: 18px 0 19px 0;
+}
+
+.show .boxes h5 {
+    height: 60px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.show .boxes p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.main_feature {
+    padding: 25px 0px 65px;
+}
+
+.main_feature img {
+    float: right;
+}
+
+.details {
+    float: left;
+    width: 440px;
+}
+
+.details h4,
+.details p,
+.details ul,
+.details li {
+    color: black;
+}
+
+.details h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.details p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+}
+
+.details ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.details li:first-child::before {
+    content: "\e8da";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 11px;
+    font-family: My-Font;
+}
+
+.details li:nth-child(2)::before {
+    content: "\e8e3";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 11px;
+    font-family: My-Font;
+}
+
+.details li:nth-child(3)::before {
+    content: "\e786";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 11px;
+    font-family: My-Font;
+}
+
+.details li:nth-child(4)::before {
+    content: "\e784";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 11px;
+    font-family: My-Font;
+}
+
+.details li:nth-child(5)::before {
+    content: "\e977";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 5px;
+    margin-right: 11px;
+    font-family: My-Font;
+}
